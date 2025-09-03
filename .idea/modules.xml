@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula6/Aula6.iml" filepath="$PROJECT_DIR$/Aula6/Aula6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSJ/DSJ.iml" filepath="$PROJECT_DIR$/DSJ/DSJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DesenvolvimentodeSistemasJava.iml" filepath="$PROJECT_DIR$/.idea/DesenvolvimentodeSistemasJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vetores/Vetores.iml" filepath="$PROJECT_DIR$/Vetores/Vetores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula4/aula4.iml" filepath="$PROJECT_DIR$/aula4/aula4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula8/aula8.iml" filepath="$PROJECT_DIR$/aula8/aula8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
