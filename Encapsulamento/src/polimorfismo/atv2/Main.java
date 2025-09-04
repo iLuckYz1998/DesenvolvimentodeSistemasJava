@@ -12,6 +12,6 @@ public class Main {
         System.out.println(multiplicacao.calcular(2,5));
         System.out.println(subtracao.calcular(10,5));
         System.out.println(divisao.calcular(10,2));
-        
+
     }
 }
