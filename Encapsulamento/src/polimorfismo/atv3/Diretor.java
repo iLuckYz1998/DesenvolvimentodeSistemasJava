@@ -6,20 +6,35 @@ public class Diretor extends Funcionario implements Contratacao{
         super(nome, setor, sexo, salarioBase, datadeNascimento);
     }
 
+    private static double PREMIO = 0.2;
+
     @Override
     public void admitir(Funcionario funcionario) {
-
+        System.out.println("Admitindo funcionario: " + funcionario.nome);
     }
 
     @Override
     public void demitir(Funcionario funcionario) {
+        System.out.println("Demitindo funcionario: " + funcionario.nome);
 
     }
 
     @Override
     public double getSalarioFinal() {
-        return 0;
+        return super.salarioBase + (super.salarioBase + this.PREMIO);
     }
 
-    private static double PREMIO = 0.2;
+    @Override
+    public String toString() {
+        return "Diretor{" +
+                "nome='" + nome + '\'' +
+                ", datadeNascimento='" + datadeNascimento + '\'' +
+                ", salarioBase=" + salarioBase +
+                ", Sexo=" + Sexo +
+                ", setor=" + setor +
+                ", salarioBase=" + getSalarioBase() +
+                ", selarioFinal=" + getSalarioFinal() +
+                '}';
+    }
+
 }

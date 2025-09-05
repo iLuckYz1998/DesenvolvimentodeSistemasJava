@@ -27,4 +27,19 @@ public class Motoboy extends Funcionario implements Contratacao{
                 ", setor=" + setor +
                 '}';
     }
+
+    @Override
+    public void admitir(Funcionario funcionario) {
+
+    }
+
+    @Override
+    public void demitir(Funcionario funcionario) {
+
+    }
+
+    @Override
+    public double getSalarioFinal() {
+        return super.salarioBase;
+    }
 }
