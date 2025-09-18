@@ -5,37 +5,43 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "tab_cliente")
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
 public class Cliente {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue
+    private UUID id ;
 
     @Column(nullable = false)
     private String nome;
 
-    @Column(nullable = false, unique = true)
-    private String telefone;
+    @Column(nullable = false)
+    private String email;
 
-    public Cliente(long id, String nome, String telefone) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-    }
+    @OneToOne(cascade = CascadeType.ALL)
+    private Endereco endereco;
 
     public Cliente(){
-
     }
 
-    public long getId() {
+    @Enumerated(EnumType.STRING)
+    private Setor setor;
+
+    public Cliente(UUID id, String nome, String email, Endereco endereco, Setor setor) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.endereco = endereco;
+        this.setor = setor;
+    }
+
+    public UUID getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
@@ -47,11 +53,27 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
     }
 }
