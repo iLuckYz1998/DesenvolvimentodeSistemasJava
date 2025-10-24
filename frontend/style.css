@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    font-style: normal;
+}
+
+img{
+    /* TAMANHO DA IMAGEM */
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.index h1{
+    font-size: 200px;
+}
+
+li {
+    font-style: italic;
+}
+
+.index hr{
+    width: 50%;
+}
+
+.lista_numerada h3{
+    font-size: 100px;
+    font-style: italic;
+}
